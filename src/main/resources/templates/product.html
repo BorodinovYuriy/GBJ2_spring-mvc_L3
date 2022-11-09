@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Отличный выбор!</p>
+<br>
+<img src="https://avatars.mds.yandex.net/i?id=a4444e135be9914139ac85a97d4a012f90cfb090-6846484-images-thumbs&n=13&exp=1">
+<h3 th:text = "${product.getTitle}">Наименование продукта</h3>
+<table>
+    <tr>
+        <td style="color:blue">Лучшая цена!  </td>
+        <td th:text="${product.getFormatCost}"></td>
+    </tr>
+</table>
+</body>
+
+
+
+
+
+
+</html>
